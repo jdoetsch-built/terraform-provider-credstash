@@ -1,7 +1,7 @@
 VERSION = $(shell git tag --sort=version:refname  | tail -1)
 
 build:
-	go build -v -i -o terraform-provider-credstash
+	go build -v -o terraform-provider-credstash
 
 test:
 	go test ./...
